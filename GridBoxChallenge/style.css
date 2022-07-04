@@ -1,0 +1,33 @@
+.grid-class {
+    display: grid;
+    grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+#topFlexboxLeft {
+
+    grid-column-start: col-start 0;
+    grid-column-end: span 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 50px;
+    background-color: blue;
+    border-width: 10px;
+}
+
+#topFlexboxRight {
+
+    grid-column-start: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    background-color: red;
+    border-width: 10px;
+}
