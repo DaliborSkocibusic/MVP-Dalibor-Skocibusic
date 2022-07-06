@@ -1,0 +1,93 @@
+div {
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  position: absolute;
+  right: 1vw;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50vw;
+  height: auto;
+  z-index: 100;
+}
+
+.page-width {
+  width: 100vw;
+  position: relative;
+}
+
+.nav overlay_div {
+  visibility: visible;
+  opacity: 1;
+  transition: all 2s ease-out;
+  color: white;
+}
+
+.nav a:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+  visibility: visible;
+  transition: all 1s ease-in;
+}
+
+.stop-overflow {
+  overflow-x: hidden;
+}
+
+.nav__items {
+  width: 8vw;
+  color: white;
+  background-color: black;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  position: absolute;
+  background-color: rgb(170, 203, 21);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page-section {
+  position: static;
+  font-size: 36px;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: lime;
+  height: 100vh;
+  width: 100vh;
+}
+
+#home {
+  background-color: rgb(0, 44, 88);
+}
+
+#skills {
+  background-color: rgb(0, 88, 176);
+}
+
+#projects {
+  background-color: rgb(0, 0, 80);
+}
+
+#experience {
+  background-color: rgb(0, 0, 128);
+}
+
+#about {
+  background-color: rgb(0, 0, 64);
+}
+
+#contact {
+  background-color: rgb(0, 0, 32);
+}
