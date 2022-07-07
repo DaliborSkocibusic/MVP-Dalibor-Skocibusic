@@ -15,8 +15,8 @@ div {
 }
 
 .nav {
-    position: absolute;
-    right: 1vw;
+    position: fixed;
+    right: 1px;
     top: 0;
     display: flex;
     flex-direction: row;
@@ -64,11 +64,15 @@ div {
     overflow-x: hidden;
 }
 
+a {
+    display: flex;
+    justify-content: center;
+}
 .nav__items {
-    width: 8vw;
+    // width: 80vw;
 
     color: white;
-    background-color: black;
+    // background-color: black;
 
     // @include devices.phone {
 
@@ -111,7 +115,7 @@ body {
     color: white;
     background-color: lime;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 
     // &--small {
     //         height: 100vh;
