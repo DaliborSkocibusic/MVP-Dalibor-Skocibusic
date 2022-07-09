@@ -21,23 +21,29 @@ div {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 50vw;
+    width: 100vw;
     height: auto;
     z-index: 100;
+
+    @include devices.phone {
+        width: 100vw;
+    }
+    @include devices.tablet {
+        width: 75vw;
+    }
+
+    @include devices.tablet-landscape {
+        width: 75vw;
+    }
+
+    @include devices.laptop {
+        width: 50vw;
+    }
+
+    @include devices.largest {
+        width: 60vw;
+    }
 }
-
-// THIS IS THE TEST
-
-// .nav {
-//     top: 0;
-//     position: fixed; //Fixing the container removes the padding issue
-//     // display: grid;
-//     display: flex;
-//     justify-content: flex-end;
-//     // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-//     // width: 100vw;
-//     color: green; // Just to see that everythin is covered
-// }
 
 .page-width {
     width: 100vw;
@@ -53,7 +59,6 @@ div {
 
 .nav a:hover {
     background: white;
-    //border: 2px solid black;
     color: black;
     cursor: pointer;
     visibility: visible;
@@ -69,29 +74,28 @@ a {
     justify-content: center;
 }
 .nav__items {
-    // width: 80vw;
-
+    font-size: 20px;
     color: white;
-    // background-color: black;
 
-    // @include devices.phone {
+    @include devices.phone {
+        font-size: 10px;
+    }
 
-    // }
+    @include devices.tablet {
+        font-size: 20px;
+    }
 
-    // @include devices.tablet {
+    @include devices.tablet-landscape {
+        font-size: 25px;
+    }
 
-    // }
+    @include devices.laptop {
+        font-size: 25px;
+    }
 
-    // @include devices.tablet-landscape {
-    // }
-
-    // @include devices.laptop {
-
-    // }
-
-    // @include devices.largest {
-
-    // }
+    @include devices.largest {
+        font-size: 30px;
+    }
 }
 
 // Makes the in page links scroll nice and smoohtly
@@ -108,35 +112,48 @@ body {
 }
 
 .page-section {
-    // margin: 0px;
-    // padding: 0px;
-    // display: flexbox;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
     position: static;
     font-size: 36px;
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    background-color: lime;
     height: 100vh;
     width: 100vw;
 
-    // &--small {
-    //         height: 100vh;
-    // width: 100vw;
-    // }
+    @include devices.phone {
+        font-size: 5px;
+        color: green;
+        position:sticky;
+    
+    }
+
+    @include devices.tablet {
+        font-size: 5px;
+        color: green;
+    }
+    @include devices.tablet-landscape {
+        font-size: 10px;
+        color: green;
+    }
+
+    @include devices.laptop {
+        font-size: 12px;
+        color: green;
+    }
+
+    @include devices.largest {
+        font-size: 50px;
+        color: green;
+    }
 }
 
 #home {
     background-color: rgb(0, 44, 88);
 }
 
-.home-section {
-    margin: 0px;
-    padding: 0px;
-    // display: flexbox;
-    // display: flex;
-    background-color: rgb(0, 44, 88);
-}
 #skills {
     background-color: rgb(0, 88, 176);
 }
