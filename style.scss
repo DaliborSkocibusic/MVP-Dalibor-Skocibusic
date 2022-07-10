@@ -68,6 +68,7 @@ div {
 a {
     display: flex;
     justify-content: center;
+    color: white;
 }
 .nav__items {
     font-size: 20px;
@@ -99,7 +100,7 @@ html,
 body {
     scroll-behavior: smooth;
     position: absolute;
-    background-color: rgb(170, 203, 21);
+    background-color: blue;
     margin: 0;
     padding: 0;
     border: 0;
@@ -233,6 +234,47 @@ body {
         width: 10vh;
         align-items: center;
         justify-content: space-around;
+    }
+
+    &__contact-container {
+        display: flexbox;
+        // margin-top: 20vh;
+        // margin-right: 10vh;
+        // height: 15vh;
+
+        display: flexbox;
+        justify-content: right;
+        align-items: center;
+
+        @include devices.phone {
+            font-size: 25px;
+        }
+
+        @include devices.tablet {
+            font-size: 25px;
+        }
+        @include devices.tablet-landscape {
+            font-size: 25px;
+        }
+
+        @include devices.laptop {
+            font-size: 25px;
+        }
+
+        @include devices.largest {
+            font-size: 25px;
+        }
+    }
+
+        &__contact-items {
+            color: white;
+        position: static;
+        margin-right: 5vw;
+        margin-top: 7vh;
+        height: 5vh;
+
+        justify-content: right;
+        align-items: center;
     }
 }
 

@@ -63,6 +63,7 @@ div {
 a {
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .nav__items {
@@ -99,7 +100,7 @@ html,
 body {
   scroll-behavior: smooth;
   position: absolute;
-  background-color: rgb(170, 203, 21);
+  background-color: blue;
   margin: 0;
   padding: 0;
   border: 0;
@@ -245,6 +246,46 @@ body {
   width: 10vh;
   align-items: center;
   justify-content: space-around;
+}
+.page-section__contact-container {
+  display: flexbox;
+  display: flexbox;
+  justify-content: right;
+  align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .page-section__contact-container {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .page-section__contact-container {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .page-section__contact-container {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .page-section__contact-container {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .page-section__contact-container {
+    font-size: 25px;
+  }
+}
+.page-section__contact-items {
+  color: white;
+  position: static;
+  margin-right: 5vw;
+  margin-top: 7vh;
+  height: 5vh;
+  justify-content: right;
+  align-items: center;
 }
 
 .dissapearing {
