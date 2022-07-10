@@ -29,7 +29,7 @@ div {
         width: 100vw;
     }
     @include devices.tablet {
-        width: 75vw;
+        width: 100vw;
     }
 
     @include devices.tablet-landscape {
@@ -108,35 +108,38 @@ body {
 }
 
 .page-section {
+    display: flexbox;
     margin: 0px;
     border: 0px;
     padding: 0px;
     text-align: left;
+    font-size: 36px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     height: 100vh;
     width: 100vw;
 
     @include devices.phone {
-        font-size: 5px;
+        font-size: 25px;
     }
 
     @include devices.tablet {
-        font-size: 5px;
+        font-size: 25px;
     }
     @include devices.tablet-landscape {
-        font-size: 10px;
+        font-size: 25px;
     }
 
     @include devices.laptop {
-        font-size: 12px;
+        font-size: 25px;
     }
 
     @include devices.largest {
-        font-size: 50px;
+        font-size: 25px;
     }
 
     &__home-container {
+        display: flexbox;
         margin-top: 20vh;
         margin-right: 10vh;
         height: 15vh;
@@ -164,13 +167,53 @@ body {
             font-size: 25px;
         }
     }
-    &__home-element {
+
+    &__home-element-right-head {
+        position: static;
+        font-size: 25px;
         margin-right: 10vh;
+        margin-bottom: 50px;
         height: 5vh;
 
         display: flexbox;
         justify-content: right;
         align-items: center;
+    }
+    &__home-element-right {
+        position: static;
+        margin-right: 10vh;
+        height: 5vh;
+
+        justify-content: right;
+        align-items: center;
+    }
+
+    &__home-element-left {
+        margin-right: 10vh;
+        position: absolute;
+        bottom: 25vh;
+        left: 10vw;
+        justify-content: left;
+        align-items: top;
+
+        @include devices.phone {
+            visibility: hidden;
+        }
+
+        @include devices.tablet {
+            visibility: hidden;
+        }
+
+        @include devices.tablet-landscape {
+            visibility: visible;
+        }
+
+        @include devices.laptop {
+            visibility: visible;
+        }
+        @include devices.largest {
+            visibility: visible;
+        }
     }
 
     &__tech-container {
@@ -200,17 +243,22 @@ body {
     }
 
     @include devices.tablet {
-        visibility: visible;
+        font-size: 50px;
+        visibility: hidden;
     }
 
     @include devices.tablet-landscape {
+        font-size: 50px;
         visibility: visible;
     }
 
     @include devices.laptop {
+        font-size: 50px;
         visibility: visible;
     }
     @include devices.largest {
+        font-size: 50px;
+
         visibility: visible;
     }
 }
@@ -241,10 +289,10 @@ p {
 }
 
 .shadow {
-    box-shadow: 5px 5px 2.5px rgba(0,0,0,0.5);
-    -moz-box-shadow: 5px 5px 2.5px rgba(0,0,0,0.5);;
-    -webkit-box-shadow: 5px 5px 2.5px rgba(0,0,0,0.5);;
-    -khtml-box-shadow: 5px 5px 2.5px rgba(0,0,0,0.5);;
+    box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.5);
+    -khtml-box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.5);
 }
 
 #home {
